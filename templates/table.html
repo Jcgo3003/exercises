@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block body %}
+</br>
+<div>
+  <h2> {{ func }} </h2>
+</div>
+</br>
+    <div class="row border border-dark">
+        <div class="col">
+          <table class="table">
+            <thead>
+              <tr>
+                <span>
+                  <b><th>{{ title }}</th></b>
+                  <b><th>{{ data }}</th></b>
+                </span>
+              </tr>
+            </thead>
+            <tbody>
+              {% for key, value in dict.items() %}
+               <tr>
+                   <td> {{ key }} </td>
+                   <td> {{ value }} </td>
+               </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+    </div>
+{% endblock %}

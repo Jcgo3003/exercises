@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<br>
+<div>
+    <h3>Detecting change</h3>
+</div>
+<label for="filename">Choose a CSV file</label>
+<form action="/detecting_change" method="post" enctype="multipart/form-data">
+    <vl>
+    <input type="file" id="myFile" name="filename" accept=".csv">
+    </vl>
+    <input type="submit">
+</form>
+<br>
+<div>
+    <h3>Seasons Problem</h3>
+</div>
+<label for="filename">Choose a CSV file</label>
+<form action="/seasons" method="post" enctype="multipart/form-data">
+    <vl>
+    <input type="file" id="myFile" name="filename" accept=".csv">
+    </vl>
+    <input type="submit">
+</form>
+<br>
+<div>
+    <h3>Custom Order status</h3>
+</div>
+<label for="filename">Choose a CSV file</label>
+<form action="/order_status" method="post" enctype="multipart/form-data">
+    <vl>
+    <input type="file" id="myFile" name="filename" accept=".csv">
+    </vl>
+    <input type="submit">
+</form>
+
+{% endblock %}
